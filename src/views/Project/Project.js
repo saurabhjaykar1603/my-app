@@ -3,10 +3,14 @@ import TodoImage from "./Images/todo.png";
 import PettoImage from "./Images/petto.png";
 import QuizImage from "./Images/quiz.png";
 import TextmImage from "./Images/textM.png";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Project() {
   return (
     <>
+    <div>
+      <Navbar/>
+    </div>
       <div className="d-flex justify-content-evenly flex-wrap">
         <Cards
           title={"Todo App"}
