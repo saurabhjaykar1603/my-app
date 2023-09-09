@@ -1,26 +1,30 @@
+import "./Navbar.css"
 import {Link }from  "react-router-dom"
+
+
 export default function Navbar() {
+const path  = window.location.pathname;
   return (
     <>
-      <nav class="bg-gray-800 p-4 px-5">
-        <div class="container mx-auto flex justify-between items-center">
-          <Link to="/" class="text-white text-2xl font-semibold ">
+      <nav className="bg-gray-800 p-4 px-5">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link to="/" className={path === "" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
             PortFolio
           </Link>
           <div class="space-x-10 text-2xl">
-            <Link to="/" class="text-gray-300 hover:text-white">
+            <Link to="/" className={path === "/" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
               Home
             </Link>
-            <Link to="/project" class="text-gray-300 hover:text-white">
+            <Link to="/project" className={path === "/project" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
               Project
             </Link>
-            <Link to="/about" class="text-gray-300 hover:text-white">
+            <Link to="/about" className={path === "/about" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
               About
             </Link>
-            <Link to="/skills" class="text-gray-300 hover:text-white">
+            <Link to="/skills" className={path === "/skills" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
               Skills
             </Link>
-            <Link to="/contact" class="text-gray-300 hover:text-white">
+            <Link to="/contact" className={path === "/contact" ? "active" : "text-gray-300 text-2xl font-semibold "}>
               Contact
             </Link>
           </div>
