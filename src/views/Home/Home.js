@@ -33,7 +33,6 @@ export default function Home() {
                       </div>
                       <div className="row mt-1">
                         <div className="col-md-6">
-                          {" "}
                           <div className=" d-flex justify-content-evenly mt-3 align-content-center">
                             <Link to="https://github.com/saurabhjaykar1603/">
                               <Button
