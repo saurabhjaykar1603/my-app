@@ -15,7 +15,7 @@ export default function Cards({ title, description, img, gitubUrl, liveUrl }) {
           <p className="card-text">{description}</p>
           <div className="container d-flex justify-content-evenly mt-3 ">
             <Link to={liveUrl} className="btn btn-dark">
-              <Button btnName={"Live Demo"} />
+              <Button btnName={"Live Demo "} />
             </Link>
             <Link to={gitubUrl} className="btn btn-dark">
               <Button btnName={"Github"} />

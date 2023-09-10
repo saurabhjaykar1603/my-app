@@ -37,21 +37,22 @@ export default function Home() {
                             <Link to="https://github.com/saurabhjaykar1603/">
                               <Button
                                 btnName={"Github"}
-                                classN={"fw-bold bg-violet-600 text-lg"}
+                                classN={"fw-bold  text-lg"}
+                                Fontaw={<i class="fa-brands fa-github"></i>}
                               />
                             </Link>
-                            <Link to="https://github.com/saurabhjaykar1603/">
+                            <Link to="https://www.linkedin.com/in/saurabh-jaykar/">
                               <Button
                                 btnName={"Linkedin"}
-                                classN={"fw-bold bg-violet-600 text-lg mx-3"}
+                                classN={"fw-bold bg-blue-600 text-lg mx-3"}
+                                Fontaw={<i class="fa-brands fa-linkedin"></i>}
                               />
                             </Link>
                             <Link to="https://github.com/saurabhjaykar1603/">
                               <Button
                                 btnName={"Resume"}
-                                classN={
-                                  "fw-bold btn btn-outline bg-violet-600 text-lg "
-                                }
+                                classN={"fw-bold btn btn-outline  text-lg "}
+                                Fontaw={<i class="fa-solid fa-paperclip"></i>}
                               />
                             </Link>
                           </div>
