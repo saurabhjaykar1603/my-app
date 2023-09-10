@@ -1,7 +1,7 @@
-export default function Button({btnName}){
+export default function Button({btnName , classN}){
     return (
         <div>
-            <button className="btn btn-dark">{btnName}</button>
+            <button className={`btn btn-dark ${classN}`}>{btnName}</button>
         </div>
     )
 }
