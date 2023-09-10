@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link to="/" className={path === "" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
             PortFolio
           </Link>
-          <div class="space-x-10 text-2xl">
+          <div className="space-x-10 text-2xl">
             <Link to="/" className={path === "/" ? "active" : "text-gray-300 text-2xl font-semibold  "}>
               Home
             </Link>
@@ -52,10 +52,10 @@ export default function Navbar() {
 
       <nav className="bg-gray-800 p-4 px-5">
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className={getActiveClass("/")}>
+          <Link to="/" className={getActiveClass("")}>
             PortFolio
           </Link>
-          <div class="space-x-10 text-2xl">
+          <div className="space-x-10 text-2xl">
             <Link to="/" className={getActiveClass("/")}>
               Home
             </Link>
